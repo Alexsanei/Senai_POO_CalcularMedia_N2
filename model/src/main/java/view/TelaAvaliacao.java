@@ -59,6 +59,11 @@ public class TelaAvaliacao extends javax.swing.JFrame {
         });
 
         jTFNota1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        jTFNota1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTFNota1ActionPerformed(evt);
+            }
+        });
 
         jTFNota2.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
 
@@ -80,8 +85,9 @@ public class TelaAvaliacao extends javax.swing.JFrame {
         jLNota3.setForeground(new java.awt.Color(255, 255, 255));
         jLNota3.setText("Nota 3");
 
-        jButtonCalcular.setBackground(new java.awt.Color(204, 204, 204));
+        jButtonCalcular.setBackground(new java.awt.Color(110, 196, 51));
         jButtonCalcular.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        jButtonCalcular.setForeground(new java.awt.Color(255, 255, 255));
         jButtonCalcular.setText("Calcular");
         jButtonCalcular.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -89,8 +95,9 @@ public class TelaAvaliacao extends javax.swing.JFrame {
             }
         });
 
-        jButtonLimpar.setBackground(new java.awt.Color(204, 204, 204));
+        jButtonLimpar.setBackground(new java.awt.Color(110, 196, 51));
         jButtonLimpar.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        jButtonLimpar.setForeground(new java.awt.Color(255, 255, 255));
         jButtonLimpar.setText("Limpar");
         jButtonLimpar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -245,7 +252,7 @@ public class TelaAvaliacao extends javax.swing.JFrame {
           
           
           Aluno aluno = new Aluno();
-          DecimalFormat formatter = new DecimalFormat("#.#");
+          DecimalFormat formatter = new DecimalFormat("#.##");
           
           
           double resultado = aluno.calcularMedia(nota1,nota2,nota3);
@@ -280,6 +287,10 @@ public class TelaAvaliacao extends javax.swing.JFrame {
         jTAHistorico.setText("");
         jTFNome.requestFocus();
     }//GEN-LAST:event_jButtonLimparHistoricoActionPerformed
+
+    private void jTFNota1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTFNota1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTFNota1ActionPerformed
 
     
     public static void main(String args[]) {
