@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package model;
+// @author Alex
 
-/**
- *
- * @author Alex
- */
 public class Aluno {
     public String nome;
     double media;
