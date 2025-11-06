@@ -1,30 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package view;
+
 import model.Aluno;
 import java.text.DecimalFormat;
-/**
- *
- * @author Alex
- */
+// @author Alex
+
 public class TelaAvaliacao extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(TelaAvaliacao.class.getName());
 
-    
-    
-    
-    
     public TelaAvaliacao() {
         initComponents();
     }
 
-    
-    
-    
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -294,10 +281,6 @@ public class TelaAvaliacao extends javax.swing.JFrame {
 
     
     public static void main(String args[]) {
-        
-        
-
-        
         java.awt.EventQueue.invokeLater(() -> new TelaAvaliacao().setVisible(true));
     }
 
